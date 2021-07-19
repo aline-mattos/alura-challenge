@@ -3,44 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Favorites</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/favorites.css">
+
+
 </head>
 <body>
     <header></header>
     <main>
-        <h2>Add a new fav trailer:</h2>
+        <h1>Add a new fav trailer:</h1>
+        <br>
         <form>
-        <label for="title">Title:</label>
-        <input type="text" id="title" class="input-standard" required>
-        <label for="url">Link (URL)</label>
-        <input type="url" id="email" class="input-url" required placeholder="https://www.youtube.com/">
-        <input type="submit" value="Save favorite" class="save">
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="input-standard" required>
+            <label for="url">Link (URL)</label>
+            <input type="url" id="email" class="input-url" required placeholder="https://www.youtube.com/">
+            <input type="submit" value="Save favorite" class="save">
         </form>
         
-        <table>
+        <table class="table-movies">
+            <br>
             <thead>
                 <tr>
-                    <th>Movie</th>
-                    <th>Trailer</th>
+                    <th class="table-title">Movie</th>
+                    <th class="table-title">Trailer</th>
+                    <th class="table-edit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></th>
+                    <th class="table-delete"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-movies">
                 <tr>
-                    <td>Movie 1</td>
-                    <td>URL</td>
+                    <td class="title-movie">Movie 1</td>
+                    <td class="url-movie">URL</td>
+                    <td class="edit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></td>
+                    <td class="delete"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg></td>
+
                 </tr>
                 <tr>
-                    <td>Movie 2</td>
-                    <td>URL</td>
+                    <td class="title-movie">Movie 2</td>
+                    <td class="url-movie">URL</td>
+                    <td class="edit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></td>
+                    <td class="delete"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg></td>
+
                 </tr>
                 <tr>
-                    <td>Movie 3</td>
-                    <td>URL</td>
+                    <td class="title-movie">Movie 3</td>
+                    <td class="url-movie">URL</td>
+                    <td class="edit"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg></td>
+                    <td class="delete"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg></td>
+
                 </tr>   
             </tbody>
         </table>
 
     </main>
+
+    <script src="./js/principal.js" ></script>
     
 </body>
 </html>

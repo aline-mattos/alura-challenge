@@ -1,0 +1,1 @@
+var movieTitle = document.querySelector(".title")
