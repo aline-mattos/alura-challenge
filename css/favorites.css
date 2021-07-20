@@ -4,48 +4,31 @@ h1 {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-form {
+.form-add-favorite {
 	margin-left: 200px;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-th{
-	font-weight: bold;
-	background-color: #EEE;
-}
+
 .table-movies{
+	width: 500px;
 	margin-left: 200px;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-
+	table-layout: fixed;
 }
 
-.table-title {
-	padding: 7px;
-	margin: 5px;
-	border: 1px solid #ccc;
-	text-align: center;
+thead{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+.tbody-table-movies{
 	width: 500px;
-	
-}
-
-.table-edit, .table-delete  {
+	padding: .7em;
+	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
-	width: 10px;
-
-}
-
-.edit, .delete  {
-	border: 1px dashed #ccc;
-	text-align: center;
-	width: 10px;
-}
-
-.title-movie, .url-movie {
-	padding: 7px;
-	margin: 5px;
-	border: 1px solid #ccc;
-	text-align: center;
+	table-layout: fixed;
 }
 
 
